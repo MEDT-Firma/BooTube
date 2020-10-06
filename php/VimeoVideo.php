@@ -12,15 +12,20 @@ class VimeoVideo implements VideoInterface
         $this->link = $link;
     }
 
-    function getHTMLEmbedded()
+    function getHTMLEmbedded($width, $height)
     {
-        return "<iframe src=\"".$this->link."\" width=\"640\" height=\"421\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>";
+        return "<iframe src=\"".$this->link."\" width=\"{$width}\" height=\"{$height}\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>";
     }
 
     function getName()
     {
         return $this->name;
     }
+
+    function getThumbnailUrl()
+    {
+        // TODO: Implement getThumbnailUrl() method.
+    }
 }
 $vimeoVideo = new VimeoVideo("fuck", "https://vimeo.com/14166815");
-echo $vimeoVideo->getHTMLEmbedded();
+echo $vimeoVideo->getHTMLEmbedded(300 , 200);
