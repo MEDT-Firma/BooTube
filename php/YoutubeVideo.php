@@ -12,10 +12,10 @@ class YoutubeVideo implements VideoInterface{
     }
 
 
-    function getHTMLEmbedded()
+    function getHTMLEmbedded($width, $height)
     {
         // TODO: Implement getHTMLEmbedded() method.
-        return "<iframe width=\"560\" height=\"315\" src=\"".$this->link."\" frameborder=\"0\" allowfullscreen></iframe>";
+        return "<iframe width=\"{$width}\" height=\"{$height}\" src=\"".$this->link."\" frameborder=\"0\" allowfullscreen></iframe>";
     }
 
     function getName(){
@@ -23,8 +23,13 @@ class YoutubeVideo implements VideoInterface{
         return $this->name;
 
     }
+
+    function getThumbnailUrl()
+    {
+        // TODO: Implement getThumbnailUrl() method.
+    }
 }
 
 
 $youtubevideo = new YoutubeVideo('horro', "https://www.youtube.com/embed/2mTTGe2sJOU\"");
-echo $youtubevideo->getHTMLEmbedded();
+echo $youtubevideo->getHTMLEmbedded(300,200);
