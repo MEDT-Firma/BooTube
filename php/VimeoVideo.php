@@ -27,5 +27,5 @@ class VimeoVideo implements VideoInterface
         // TODO: Implement getThumbnailUrl() method.
     }
 }
-$vimeoVideo = new VimeoVideo("fuck", "https://vimeo.com/14166815");
+$vimeoVideo = new VimeoVideo("fuck", "https://player.vimeo.com/video/14166815");
 echo $vimeoVideo->getHTMLEmbedded(300 , 200);
