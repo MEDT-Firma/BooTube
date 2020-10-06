@@ -1,0 +1,9 @@
+.video, .video img {
+    width: calc(192px * 2);
+    height: calc(108px * 2);
+}
+
+.videos {
+    display: flex;
+    flex-direction: column;
+}
