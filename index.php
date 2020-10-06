@@ -15,18 +15,31 @@
             flex-direction: row;
         }
 
+        .video:hover {
+            background-color: rgba(0, 0, 0, .1);
+        }
+
         .video {
+            padding: 4px;
             margin-top: 16px;
             margin-bottom: 16px;
+            margin: 8px;
             min-width: 350px;
-            /*width: 18%;*/
+            /*width: 18%;*//*
             background-color: aquamarine;
-            border: 1px black solid;
+            border: 1px black solid;*/
             flex: 1;
 
             display: inline-flex;
             justify-content: center;
             flex-direction: column;
+            border: none;
+            transition: background-color .3s;
+        }
+
+        .video img {
+            width: 100%;
+            height: auto;
         }
 
         .videos {
@@ -46,10 +59,10 @@
 <main>
     <div class="videos">
         <?php
-        for ($i = 0; $i < 20; $i++) {
+        for ($i = 1; $i <= 20; $i++) {
             $html_code = <<<ende
-<div class="video">
-            <img class="rounded" src="https://via.placeholder.com/350x200">
+<div class="video card">
+            <img class="rounded" src="https://via.placeholder.com/1920x1080">
             <p>Horror Video #{$i} auf Vimeo</p>
         </div>
 ende;
@@ -59,5 +72,9 @@ ende;
         ?>
     </div>
 </main>
+
+<script>
+
+</script>
 </body>
 </html>
