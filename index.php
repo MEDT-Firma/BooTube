@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/style.css">
     </head>
-    <body class="no-interact">
+    <body>
         <nav class="navbar navbar-dark">
             <a class="navbar-brand" href="#">BooTube</a>
         </nav>
@@ -23,14 +23,19 @@
 
                 require_once "php/VimeoVideo.php";
                 require_once "php/YoutubeVideo.php";
+                require_once "php/LocalVideo.php";
 
                 $videos = array(
-
                     new YoutubeVideo('THE CALL Official Trailer (2020) Horror Movie', "https://www.youtube.com/embed/2mTTGe2sJOU\"", "assets/TheCall.jpg"),
                     new YoutubeVideo('TRAIN TO BUSAN 2: Peninsula Trailer German Deutsch (2020)', "https://www.youtube.com/embed/Oay4uHnjK_w\"", "assets/TraintoBusan2.jpg"),
                     new YoutubeVideo('RINGS Trailer German Deutsch (2017)', "https://www.youtube.com/embed/P9BqPsAe_vM\"", "assets/Rings.jpg"),
                     new YoutubeVideo('FREAKY Trailer German Deutsch (2020)', "https://www.youtube.com/embed/wTvwBs5chq0\"", "assets/Freaky.jpg"),
-                    new YoutubeVideo('HAPPY DEATHDAY 2U Trailer German Deutsch (2019)', "https://www.youtube.com/embed/a3XZgayL00I\"", "assets/HappyDeathDay2U.jpg")
+                    new YoutubeVideo('HAPPY DEATHDAY 2U Trailer German Deutsch (2019)', "https://www.youtube.com/embed/a3XZgayL00I\"", "assets/HappyDeathDay2U.jpg"),
+                    new LocalVideo("Annabelle 3", "assets/videos/annabelle-3-trailer-german-deutsch-2019.mp4", "assets/annabelle.jpg"),
+                    new LocalVideo("It", "assets/videos/it-official-teaser-trailer.mp4", "assets/IT.jpg"),
+                    new LocalVideo("The conjuring", "assets/videos/the-conjuring-official-main-trailer-hd.mp4", "assets/theconjuring.jpg"),
+                    new LocalVideo("The nun", "assets/videos/the-nun-trailer-german-deutsch-2018.mp4", "assets/the nun.jpg"),
+                    new LocalVideo("Us", "assets/videos/us-official-trailer-hd.mp4", "assets/us.jpg")
                 );
 
                 if (count($videos) == 0)
