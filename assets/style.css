@@ -25,8 +25,8 @@ main {
 .video {
     padding: 4px;
     margin: 8px;
-    min-width: 350px;
-    flex: 1;
+    width: 350px;
+    flex-grow: 1;
     background-color: rgba(255, 255, 255, .8);
 
     display: inline-flex;
