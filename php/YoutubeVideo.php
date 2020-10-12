@@ -5,10 +5,12 @@ require_once "video.php";
 class YoutubeVideo implements VideoInterface{
     public $name;
     private $link;
+    private $thumbnails;
 
-    function __construct($name, $link){
+    function __construct($name, $link, $thumbnails){
         $this->name = $name;
         $this->link = $link;
+        $this->thumbnails = $thumbnails;
     }
 
 
@@ -31,5 +33,17 @@ class YoutubeVideo implements VideoInterface{
 }
 
 
-$youtubevideo = new YoutubeVideo('horro', "https://www.youtube.com/embed/2mTTGe2sJOU\"");
-echo $youtubevideo->getHTMLEmbedded(300,200);
+
+
+$videos = array(
+    new YoutubeVideo('The Call', "https://www.youtube.com/embed/2mTTGe2sJOU\"", "assets/TheCall.jpg"),
+    new YoutubeVideo('Train to Busan 2', "https://www.youtube.com/embed/Oay4uHnjK_w\"", "assets/TraintoBusan2.jpg"),
+    new YoutubeVideo('Rings', "https://www.youtube.com/embed/P9BqPsAe_vM\"", "assets/Rings.jpg"),
+    new YoutubeVideo('Freaky', "https://www.youtube.com/embed/wTvwBs5chq0\"", "assets/Freaky.jpg"),
+    new YoutubeVideo('Happy Deathday 2U', "https://www.youtube.com/embed/a3XZgayL00I\"", "HappyDeathDay2U.jpg")
+);
+
+//foreach ($videos as $ret){
+//    echo $ret -> getHTMLEmbedded("300","200");
+//
+//}
