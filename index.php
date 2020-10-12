@@ -26,6 +26,11 @@
 
                 $videos = array(
 
+                    new YoutubeVideo('THE CALL Official Trailer (2020) Horror Movie', "https://www.youtube.com/embed/2mTTGe2sJOU\"", "assets/TheCall.jpg"),
+                    new YoutubeVideo('TRAIN TO BUSAN 2: Peninsula Trailer German Deutsch (2020)', "https://www.youtube.com/embed/Oay4uHnjK_w\"", "assets/TraintoBusan2.jpg"),
+                    new YoutubeVideo('RINGS Trailer German Deutsch (2017)', "https://www.youtube.com/embed/P9BqPsAe_vM\"", "assets/Rings.jpg"),
+                    new YoutubeVideo('FREAKY Trailer German Deutsch (2020)', "https://www.youtube.com/embed/wTvwBs5chq0\"", "assets/Freaky.jpg"),
+                    new YoutubeVideo('HAPPY DEATHDAY 2U Trailer German Deutsch (2019)', "https://www.youtube.com/embed/a3XZgayL00I\"", "assets/HappyDeathDay2U.jpg")
                 );
 
                 if (count($videos) == 0)

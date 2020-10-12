@@ -26,24 +26,8 @@ class YoutubeVideo implements VideoInterface{
 
     }
 
-    function getThumbnailUrl()
-    {
-        // TODO: Implement getThumbnailUrl() method.
+    function getThumbnailUrl(){
+        return $this->thumbnails;
     }
 }
 
-
-
-
-$videos = array(
-    new YoutubeVideo('The Call', "https://www.youtube.com/embed/2mTTGe2sJOU\"", "assets/TheCall.jpg"),
-    new YoutubeVideo('Train to Busan 2', "https://www.youtube.com/embed/Oay4uHnjK_w\"", "assets/TraintoBusan2.jpg"),
-    new YoutubeVideo('Rings', "https://www.youtube.com/embed/P9BqPsAe_vM\"", "assets/Rings.jpg"),
-    new YoutubeVideo('Freaky', "https://www.youtube.com/embed/wTvwBs5chq0\"", "assets/Freaky.jpg"),
-    new YoutubeVideo('Happy Deathday 2U', "https://www.youtube.com/embed/a3XZgayL00I\"", "HappyDeathDay2U.jpg")
-);
-
-//foreach ($videos as $ret){
-//    echo $ret -> getHTMLEmbedded("300","200");
-//
-//}
