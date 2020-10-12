@@ -5,11 +5,13 @@ class VimeoVideo implements VideoInterface
 {
     public $name;
     private $link;
+    private $thumbnails;
 
-    function __construct($name, $link)
+    function __construct($name, $link, $thumbnails)
     {
         $this->name = $name;
         $this->link = $link;
+        $this->thumbnails = $thumbnails;
     }
 
     function getHTMLEmbedded($width, $height)
@@ -22,10 +24,8 @@ class VimeoVideo implements VideoInterface
         return $this->name;
     }
 
-    function getThumbnailUrl()
-    {
-        // TODO: Implement getThumbnailUrl() method.
+    function getThumbnailUrl(){
+        return $this->thumbnails;
     }
 }
-$vimeoVideo = new VimeoVideo("fuck", "https://player.vimeo.com/video/14166815");
-echo $vimeoVideo->getHTMLEmbedded(300 , 200);
+
