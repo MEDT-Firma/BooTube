@@ -25,7 +25,7 @@
                 require_once "php/YoutubeVideo.php";
 
                 $videos = array(
-                    
+
                 );
 
                 if (count($videos) == 0)
@@ -36,7 +36,7 @@
                     $framecode = urlencode($video->getHTMLEmbedded(0,0));
                     $html_code = <<<ende
         <div class="video card" embedded-code="{$framecode}" onclick="openPopup(this);">
-                    <img class="rounded" src="https://via.placeholder.com/1920x1080">
+                    <img class="rounded" src="{$video->getThumbnailUrl()}">
                     <p>{$video->getName()}</p>
                 </div>
 ende;
