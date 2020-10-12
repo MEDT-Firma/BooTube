@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/style.css">
     </head>
-    <body class="no-interact">
+    <body>
         <nav class="navbar navbar-dark">
             <a class="navbar-brand" href="#">BooTube</a>
         </nav>
@@ -23,9 +23,14 @@
 
                 require_once "php/VimeoVideo.php";
                 require_once "php/YoutubeVideo.php";
+                require_once "php/LocalVideo.php";
 
                 $videos = array(
-
+                    new LocalVideo("Annabelle 3", "assets/videos/annabelle-3-trailer-german-deutsch-2019.mp4", "assets/annabelle.jpg"),
+                    new LocalVideo("It", "assets/videos/it-official-teaser-trailer.mp4", "assets/IT.jpg"),
+                    new LocalVideo("The conjuring", "assets/videos/the-conjuring-official-main-trailer-hd.mp4", "assets/theconjuring.jpg"),
+                    new LocalVideo("The nun", "assets/videos/the-nun-trailer-german-deutsch-2018.mp4", "assets/the nun.jpg"),
+                    new LocalVideo("Us", "assets/videos/us-official-trailer-hd.mp4", "assets/us.jpg")
                 );
 
                 if (count($videos) == 0)
