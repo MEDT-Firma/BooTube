@@ -28,4 +28,9 @@ class LocalVideo implements VideoInterface {
     {
         return $this->thumbnail_url;
     }
+
+    public function getVideoTypeHTML()
+    {
+        return "";
+    }
 }

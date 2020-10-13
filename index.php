@@ -47,6 +47,7 @@
                     $framecode = urlencode($video->getHTMLEmbedded(0,0));
                     $html_code = <<<ende
                     <div class="video card" embedded-code="{$framecode}" onclick="openPopup(this);">
+                        {$video->getVideoTypeHTML()}
                         <img class="rounded" src="{$video->getThumbnailUrl()}">
                         <p>{$video->getName()}</p>
                     </div>

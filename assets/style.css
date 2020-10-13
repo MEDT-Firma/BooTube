@@ -106,3 +106,32 @@ body:not(.no-interact) .overlay {
 .video * {
     user-select: none;
 }
+
+.video:hover .videotype {
+    background-color: white;
+}
+
+.videotype {
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    border: 1px rgba(255, 255, 255, .4) solid;
+    border-bottom-left-radius: 4px;
+    padding-right: 4px ;
+    padding-left: 4px ;
+    padding: 4px;
+    display: inline;
+    width: auto;
+    right: 4px;
+    top: 4px;
+    /*right: 8px;*/
+    /*top: 8px;*/
+    /*background-color: rgba(255, 255, 255, .4);*/
+    background-color: rgba(255, 255, 255, .8);
+    transition: background-color .3s;
+    letter-spacing: .08em;
+}
+
+.videotype img {
+    height: 16px;
+}

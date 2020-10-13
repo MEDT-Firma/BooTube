@@ -28,5 +28,10 @@ class VimeoVideo implements VideoInterface
     {
         return $this->thumbnails;
     }
+
+    public function getVideoTypeHTML()
+    {
+        return '<span class="videotype"><img src="assets/logos/vimeo.png"></span>';
+    }
 }
 

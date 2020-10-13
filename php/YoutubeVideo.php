@@ -29,5 +29,10 @@ class YoutubeVideo implements VideoInterface{
     function getThumbnailUrl(){
         return $this->thumbnails;
     }
+
+    public function getVideoTypeHTML()
+    {
+        return '<span class="videotype"><img src="assets/logos/youtube.png"></span>';
+    }
 }
 
