@@ -37,10 +37,10 @@
                     new LocalVideo("The nun", "assets/videos/the-nun-trailer-german-deutsch-2018.mp4", "assets/the nun.jpg"),
                     new LocalVideo("Us", "assets/videos/us-official-trailer-hd.mp4", "assets/us.jpg"),
                     new VimeoVideo("HorrorShort", "https://www.vimeo.com/389485830", "assets/vimeoHorrorShort.jpg"),
-                    new VimeoVideo("HorrorTrailer - H+H Brandsmiths", "https://vimeo.com/224447708", "assets/vimeoHorrorTrailer_H+H_Brandsmiths.jpg"),
-                    new VimeoVideo("The Philosophy of Horror", "https://vimeo.com/364459027", "assets/vimeoThe Philosophy_of_Horror.jpg"),
-                    new VimeoVideo("Night Things", "https://vimeo.com/4475948", "assets/vimeoNightThings.jpg"),
-                    new VimeoVideo("The Beach House", "https://vimeo.com/439764966", "assets/vimeoTheBeachHouse.jpg")
+                    new VimeoVideo("HorrorTrailer - H+H Brandsmiths", "https://player.vimeo.com/video/224447708", "assets/vimeoHorrorTrailer_H+H_Brandsmiths.jpg"),
+                    new VimeoVideo("The Philosophy of Horror", "https://player.vimeo.com/video/364459027", "assets/vimeoThe Philosophy_of_Horror.jpg"),
+                    new VimeoVideo("Night Things", "https://player.vimeo.com/video/4475948", "assets/vimeoNightThings.jpg"),
+                    new VimeoVideo("The Beach House", "https://player.vimeo.com/video/439764966", "assets/vimeoTheBeachHouse.jpg")
                 );
 
                 foreach ($videos as $video) {
