@@ -28,4 +28,3 @@ class VimeoVideo implements VideoInterface
     }
 }
 $vimeoVideo = new VimeoVideo("fuck", "https://player.vimeo.com/video/14166815");
-echo $vimeoVideo->getHTMLEmbedded(300 , 200);
