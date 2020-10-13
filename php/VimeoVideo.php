@@ -16,7 +16,7 @@ class VimeoVideo implements VideoInterface
 
     function getHTMLEmbedded($width, $height)
     {
-        return "<iframe src=\"".$this->link."\" width=\"{$width}\" height=\"{$height}\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>";
+        return "<iframe src=\"" . $this->link . "\" width=\"{$width}\" height=\"{$height}\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>";
     }
 
     function getName()
@@ -24,7 +24,8 @@ class VimeoVideo implements VideoInterface
         return $this->name;
     }
 
-    function getThumbnailUrl(){
+    function getThumbnailUrl()
+    {
         return $this->thumbnails;
     }
 }
