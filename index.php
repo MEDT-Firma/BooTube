@@ -35,7 +35,7 @@
                     new VimeoVideo("HorrorTrailer - H+H Brandsmiths", "https://player.vimeo.com/video/224447708", "assets/vimeoHorrorTrailer_H+H_Brandsmiths.jpg"),
                     new VimeoVideo("The Philosophy of Horror", "https://player.vimeo.com/video/364459027", "assets/vimeoThe Philosophy_of_Horror.jpg"),
                     new VimeoVideo("Night Things", "https://player.vimeo.com/video/4475948", "assets/vimeoNightThings.jpg"),
-                    new VimeoVideo("The Beach House", "https://player.vimeo.com/video/439764966", "assets/vimeoTheBeachHouse.jpg")
+                    new VimeoVideo("The Beach House", "https://player.vimeo.com/video/439764966", "assets/vimeoTheBeachHouse.jpg"),
                     new LocalVideo("ANNABELLE 3 Trailer German Deutsch (2019)", "assets/videos/annabelle-3-trailer-german-deutsch-2019.mp4", "assets/annabelle.jpg"),
                     new LocalVideo("IT - Official Teaser Trailer", "assets/videos/it-official-teaser-trailer.mp4", "assets/IT.jpg"),
                     new LocalVideo("The Conjuring - Official Main Trailer [HD]", "assets/videos/the-conjuring-official-main-trailer-hd.mp4", "assets/theconjuring.jpg"),
