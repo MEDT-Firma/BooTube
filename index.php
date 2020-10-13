@@ -30,17 +30,17 @@
                     new YoutubeVideo('TRAIN TO BUSAN 2: Peninsula Trailer German Deutsch (2020)', "https://www.youtube.com/embed/Oay4uHnjK_w\"", "assets/TraintoBusan2.jpg"),
                     new YoutubeVideo('RINGS Trailer German Deutsch (2017)', "https://www.youtube.com/embed/P9BqPsAe_vM\"", "assets/Rings.jpg"),
                     new YoutubeVideo('FREAKY Trailer German Deutsch (2020)', "https://www.youtube.com/embed/wTvwBs5chq0\"", "assets/Freaky.jpg"),
-                    new YoutubeVideo('HAPPY DEATHDAY 2U Trailer German Deutsch (2019)', "https://www.youtube.com/embed/a3XZgayL00I\"", "assets/HappyDeathDay2U.jpg"),
-                    new LocalVideo("Annabelle 3", "assets/videos/annabelle-3-trailer-german-deutsch-2019.mp4", "assets/annabelle.jpg"),
-                    new LocalVideo("It", "assets/videos/it-official-teaser-trailer.mp4", "assets/IT.jpg"),
-                    new LocalVideo("The conjuring", "assets/videos/the-conjuring-official-main-trailer-hd.mp4", "assets/theconjuring.jpg"),
-                    new LocalVideo("The nun", "assets/videos/the-nun-trailer-german-deutsch-2018.mp4", "assets/the nun.jpg"),
-                    new LocalVideo("Us", "assets/videos/us-official-trailer-hd.mp4", "assets/us.jpg"),
+                    new YoutubeVideo('HAPPY DEATHDAY 2U Trailer German Deutsch (2019)', "https://www.youtube.com/embed/a3XZgayL00I\"", "assets/HappyDeathDay2U.jpg"),   
                     new VimeoVideo("HorrorShort", "https://www.vimeo.com/389485830", "assets/vimeoHorrorShort.jpg"),
                     new VimeoVideo("HorrorTrailer - H+H Brandsmiths", "https://player.vimeo.com/video/224447708", "assets/vimeoHorrorTrailer_H+H_Brandsmiths.jpg"),
                     new VimeoVideo("The Philosophy of Horror", "https://player.vimeo.com/video/364459027", "assets/vimeoThe Philosophy_of_Horror.jpg"),
                     new VimeoVideo("Night Things", "https://player.vimeo.com/video/4475948", "assets/vimeoNightThings.jpg"),
                     new VimeoVideo("The Beach House", "https://player.vimeo.com/video/439764966", "assets/vimeoTheBeachHouse.jpg")
+                    new LocalVideo("ANNABELLE 3 Trailer German Deutsch (2019)", "assets/videos/annabelle-3-trailer-german-deutsch-2019.mp4", "assets/annabelle.jpg"),
+                    new LocalVideo("IT - Official Teaser Trailer", "assets/videos/it-official-teaser-trailer.mp4", "assets/IT.jpg"),
+                    new LocalVideo("The Conjuring - Official Main Trailer [HD]", "assets/videos/the-conjuring-official-main-trailer-hd.mp4", "assets/theconjuring.jpg"),
+                    new LocalVideo("THE NUN Trailer German Deutsch (2018)", "assets/videos/the-nun-trailer-german-deutsch-2018.mp4", "assets/the nun.jpg"),
+                    new LocalVideo("Us - Official Trailer [HD]", "assets/videos/us-official-trailer-hd.mp4", "assets/us.jpg")
                 );
 
                 foreach ($videos as $video) {
