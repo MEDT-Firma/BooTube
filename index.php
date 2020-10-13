@@ -31,7 +31,7 @@
                     new YoutubeVideo('RINGS Trailer German Deutsch (2017)', "https://www.youtube.com/embed/P9BqPsAe_vM\"", "assets/Rings.jpg"),
                     new YoutubeVideo('FREAKY Trailer German Deutsch (2020)', "https://www.youtube.com/embed/wTvwBs5chq0\"", "assets/Freaky.jpg"),
                     new YoutubeVideo('HAPPY DEATHDAY 2U Trailer German Deutsch (2019)', "https://www.youtube.com/embed/a3XZgayL00I\"", "assets/HappyDeathDay2U.jpg"),   
-                    new VimeoVideo("HorrorShort", "https://player.vimeo.com/389485830", "assets/vimeoHorrorShort.jpg"),
+                    new VimeoVideo("HorrorShort", "https://player.vimeo.com/video/389485830", "assets/vimeoHorrorShort.jpg"),
                     new VimeoVideo("HorrorTrailer - H+H Brandsmiths", "https://player.vimeo.com/video/224447708", "assets/vimeoHorrorTrailer_HH_Brandsmiths.jpg"),
                     new VimeoVideo("The Philosophy of Horror", "https://player.vimeo.com/video/364459027", "assets/vimeoThe Philosophy_of_Horror.jpg"),
                     new VimeoVideo("Night Things", "https://player.vimeo.com/video/4475948", "assets/vimeoNightThings.jpg"),
