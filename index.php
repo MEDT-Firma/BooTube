@@ -43,17 +43,13 @@
                     new VimeoVideo("The Beach House", "https://vimeo.com/439764966", "assets/vimeoTheBeachHouse.jpg")
                 );
 
-                if (count($videos) == 0)
-                    for ($i = 0; $i < 20; $i++)
-                        $videos[$i] = $youtubevideo;
-
                 foreach ($videos as $video) {
                     $framecode = urlencode($video->getHTMLEmbedded(0,0));
                     $html_code = <<<ende
-        <div class="video card" embedded-code="{$framecode}" onclick="openPopup(this);">
-                    <img class="rounded" src="{$video->getThumbnailUrl()}">
-                    <p>{$video->getName()}</p>
-                </div>
+                    <div class="video card" embedded-code="{$framecode}" onclick="openPopup(this);">
+                        <img class="rounded" src="{$video->getThumbnailUrl()}">
+                        <p>{$video->getName()}</p>
+                    </div>
 ende;
                     echo $html_code . "\n";
                 }
