@@ -69,6 +69,7 @@ ende;
 
             function closePopup(elem) {
                 document.body.classList.remove("no-interact");
+                document.getElementById("embedded_code").innerHTML = "";
             }
 
             function openPopup(elem) {
