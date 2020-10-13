@@ -134,6 +134,7 @@ body:not(.no-interact) .overlay {
 
 .videotype img {
     height: 16px;
+    width: auto;
 }
 
 .video .name-wrapper {
