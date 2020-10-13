@@ -135,3 +135,15 @@ body:not(.no-interact) .overlay {
 .videotype img {
     height: 16px;
 }
+
+.video .name-wrapper {
+    text-align: center;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video .name-wrapper p {
+    margin-top: 1rem;
+}

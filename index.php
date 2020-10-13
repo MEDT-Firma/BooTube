@@ -49,7 +49,7 @@
                     <div class="video card" embedded-code="{$framecode}" onclick="openPopup(this);">
                         {$video->getVideoTypeHTML()}
                         <img class="rounded" src="{$video->getThumbnailUrl()}">
-                        <p>{$video->getName()}</p>
+                        <div class="name-wrapper"><p>{$video->getName()}</p></div>
                     </div>
 ende;
                     echo $html_code . "\n";
