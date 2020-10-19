@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="assets/style.css">
     </head>
     <body>
-        <nav class="navbar sticky-top navbar-dark">
+        <nav class="navbar sticky-top navbar-light">
             <a class="navbar-brand" href="#">BooTube</a>
         </nav>
         <div id="overlay" class="overlay">

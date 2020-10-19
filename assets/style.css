@@ -1,15 +1,17 @@
 body {
-    background: linear-gradient(to bottom, lightcoral, darkred);
-    background-repeat: repeat-x;
+    /*background: linear-gradient(to bottom, lightcoral, darkred);*/
+    /*background-repeat: repeat-x;*/
+    background-color: black;
 }
 
 main {
-    background-image: url("../assets/blood_drip.png");
+    background-image: url("../assets/blood_drip_white.png");
     background-repeat: repeat-x;
 }
 
 nav {
-    background-color: #6c0808;
+    background-color: white;
+    z-index: 10 !important;
 }
 
 main {
