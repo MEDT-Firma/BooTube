@@ -3,7 +3,7 @@
 require_once "video.php";
 
 class YoutubeVideo implements VideoInterface{
-    public $name;
+    private $name;
     private $link;
     private $thumbnails;
 
