@@ -20,8 +20,35 @@ main {
     flex-direction: row;
 }
 
-.video:hover {
-    background-color: rgba(255, 255, 255, 1);
+.video:hover .name-wrapper {
+    background-position: 0 20%;
+}
+
+.video:hover .name-wrapper > p {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.video:hover > img {
+    filter: grayscale(100%);
+}
+
+.video > img {
+    transition: filter .2s;
+    filter: grayscale(0%);
+}
+
+.name-wrapper p {
+    border: 1px transparent solid;
+    border-radius: 3px;
+}
+
+.name-wrapper {
+    background-image: url("blood_drip_black.png");
+    background-size: 60%;
+    background-repeat: repeat-x;
+    background-position: 0 120%;
+    transition: background-position .2s ease-out;
+    transition-delay: .0s;
 }
 
 .video {
@@ -29,7 +56,7 @@ main {
     margin: 8px;
     width: 350px;
     flex-grow: 1;
-    background-color: rgba(255, 255, 255, .8);
+    background-color: white;
 
     display: inline-flex;
     flex-direction: column;
@@ -117,7 +144,7 @@ body:not(.no-interact) .overlay {
     position: absolute;
     color: white;
     text-transform: uppercase;
-    border: 1px rgba(255, 255, 255, .4) solid;
+    border: 1px transparent solid;
     border-bottom-left-radius: 4px;
     padding-right: 4px ;
     padding-left: 4px ;
@@ -126,10 +153,7 @@ body:not(.no-interact) .overlay {
     width: auto;
     right: 4px;
     top: 4px;
-    /*right: 8px;*/
-    /*top: 8px;*/
-    /*background-color: rgba(255, 255, 255, .4);*/
-    background-color: rgba(255, 255, 255, .8);
+    background-color: white;
     transition: background-color .3s;
     letter-spacing: .08em;
 }
