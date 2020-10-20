@@ -156,6 +156,7 @@ body:not(.no-interact) .overlay {
     background-color: white;
     transition: background-color .3s;
     letter-spacing: .08em;
+    z-index: 5;
 }
 
 .videotype img {
